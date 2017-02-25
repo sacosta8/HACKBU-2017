@@ -9,7 +9,7 @@
 /* Constructor - Creates and returns an instance of the Kairos client
   @param app_id  : your app_id
   @param app_key : your app_key */
-var Kairos = function(cd7690fd, 32df39bf4f4e7d9882a9e6e9154ceaca)
+var Kairos = function(app_id, app_key)
 {
   this.app_id   = app_id;
   this.app_key  = app_key;

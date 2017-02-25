@@ -9,4 +9,22 @@
     <p1> you like jazz? </p1>
   </body>
 
+  <script>
+    var kairos = new Kairos("cd7690fd","32df39bf4f4e7d9882a9e6e9154ceaca");
+    console.log(kairos);
+    // (1) set up your callback method
+    function myDetectCallback(response)
+    {
+       alert(response.responseText);
+    }
+
+    // (2) prepare your parameters
+    var image       = '/static/imgs/sonic.png'; (URL)
+
+
+    // (3) pass your params and callback to the function
+    kairos.detect(image, myDetectCallback);
+
+  </script>
+
 <html>
