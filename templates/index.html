@@ -21,34 +21,15 @@
     }
 
     // (2) prepare your parameters
-      var imageObj = new Image;
+
 
       var myImage = new Image(100, 200);
       myImage.src = 'http://abovethelaw.com/wp-content/uploads/2015/04/barack-obama.jpg';
-
-      function getBase64Image(img) {
-        // Create an empty canvas element
-          var canvas = document.createElement("canvas");
-          canvas.width = img.width;
-          canvas.height = img.height;
-
-          // Copy the image contents to the canvas
-          var ctx = canvas.getContext("2d");
-          ctx.drawImage(img, 0, 0);
-
-          // Get the data-URL formatted image
-          // Firefox supports PNG and JPEG. You could check img.src to
-          // guess the original format, but be aware the using "image/jpg"
-          // will re-encode the image.
-          var dataURL = canvas.toDataURL("image/png");
-
-          return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
-}
-      var imgdata = getBase64Image(myImage);
+      myImage.src = myImage.src.replace("data:image/jpeg;base64,", "");
 
 
     // (3) pass your params and callback to the function
-    kairos.detect(imgdata, myDetectCallback);
+    kairos.detect(myImage.src, myDetectCallback);
 
   </script>
 
