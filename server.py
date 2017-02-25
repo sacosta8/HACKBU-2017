@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 #Just basic example of home page
 def hello_world():
-    return "Hello World"
+    return current_app.send_static_file('index.html')
 
 
 if __name__ == '__main__':
