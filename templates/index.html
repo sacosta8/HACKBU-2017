@@ -4,11 +4,18 @@
     <title> WEBSITE NAME </title>
     <script src="static/javascript/kairos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+    <script src="static/addons/p5.dom.js"</script>
+    <script src="static/javascript/sketch.js"></script>
 
   </head>
   <body>
     <h1> HELLO </h1>
     <p1> you like jazz? </p1>
+    <p id="attributes"></p>
+    <video id="video" width="640" height="480" autoplay></video>
+    <button id="snap">Snap Photo</button>
+    <canvas id="canvas" width="640" height="480"></canvas>
   </body>
 
   <script>
@@ -17,7 +24,7 @@
     // (1) set up your callback method
     function myDetectCallback(response)
     {
-       alert(response.responseText);
+       console.log(response.responseText);
     }
 
     // (2) prepare your parameters
@@ -30,6 +37,31 @@
 
     // (3) pass your params and callback to the function
     kairos.detect(myImage.src, myDetectCallback);
+
+  </script>
+
+  <script>
+
+
+      var canvas = document.getElementById('canvas');
+      var context = canvas.getContext('2d');
+      var video = document.getElementById('video');
+
+      // Get access to the camera!
+      if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+          navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+              video.src = window.URL.createObjectURL(stream);
+              video.play();
+
+          });
+      }
+      // Trigger photo take
+      document.getElementById("snap").addEventListener("click", function() {
+      console.log(context);
+      context.drawImage(video, 0, 0, 640, 480);
+      var image = canvas.toDataURL();
+      console.log(image);
+      });
 
   </script>
 
