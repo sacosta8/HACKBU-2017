@@ -24,11 +24,16 @@
 
     <title>Are You A Hacker?</title>
 
-
+    <style >
+      p1 {font-weight: bold;
+          font-size: 1.5em;
+      }
+    </style>
   </head>
-  <body>
+  <body  style="background-color:#f2f2f2;">
 
   <div class="container">
+    <h1 style = "text-align: center; font-size:7.0em; " class="display-1"> <kbd>I</kbd>f <kbd>Y</kbd>o<kbd>u</kbd> W<kbd>e</kbd>re <kbd>A</kbd> Ha<kbd>c</kbd>k<kbd>e</kbd>r<kbd>!</kbd></h1>
 
 
 
@@ -49,7 +54,7 @@
         </div>
         </div>
 
-        <button id="snap">Snap Photo</button>
+        <button id="snap" class="btn btn-primary">Snap Photo</button>
 
           <div id="hacker" class="row">
 
@@ -79,75 +84,151 @@
       // Trigger photo take
       document.getElementById("snap").addEventListener("click", function() {
       console.log(context);
+      $('#hacker').empty();
       context.drawImage(video, 0, 0, 640, 480);
       var image = canvas.toDataURL();
       //console.log(image);
-      var options = { "selector" : "FULL"};
-      kairos.detect(image, myDetectCallback, options);
-      console.log(typeof image);
 
 
+
+
+
+
+
+
+
+
+
+
+      $.getJSON("static/hackers6.json", function(json) {
+          //var obj = JSON.stringify(json);
+          jsonDataMAIN = JSON.stringify(json["hackers"]);
+          jsonDataMAIN = JSON.parse(jsonDataMAIN);
+          jsonData = JSON.parse(JSON.stringify(Object.keys(json["hackers"]))); // this will show the info it in firebug console
+          console.log(jsonData);
+          console.log(jsonDataMAIN);
+
+
+            var list = [];
+            var objectList = [];
+            var dict = {};
+
+
+            function myDetectCallback(response)
+            {
+
+              var obj1 =JSON.parse(response.responseText);
+              objectList.push(obj1);
+              var obj2 = obj1["images"][0]["transaction"]["confidence"];
+
+
+
+              dict[obj2] = obj1["images"][0]["transaction"]["subject_id"];
+              console.log(obj1["images"][0]["transaction"]["subject_id"]);
+
+              list.push(obj2);
+              if (list.length >= 22) {
+                listStuff(list, dict);
+
+              }
+
+            }
+            function listStuff(numArray, dict) {
+
+              numArray = numArray.sort(function (a, b) {  return a - b;  });
+
+              numArray = numArray.sort((a, b) => a - b);
+              numArray = numArray.reverse();
+              fiveNumArray = []
+
+              var fiveHackers = [];
+              for (i = 0; i <= 4; i++) {
+                fiveNumArray.push(numArray[i]);
+                fiveHackers.push(dict[numArray[i]]);
+
+              }
+              console.log(fiveHackers);
+
+              hope(fiveHackers, fiveNumArray);
+
+
+
+            }
+
+
+
+
+            //console.log(jsonData[key]);
+            for (key in jsonData){
+
+            kairos.verify(image, "a-gallery", jsonData[key], myDetectCallback);
+            //function(image, gallery_id, subject_id, callback, options)
+            }
+
+
+
+
+            function hope(fiveHackers, fiveNumArray) {
+                      for (i=0; i<fiveHackers.length; i++) {
+                        console.log("debug:" + fiveHackers[i]);
+                        var hacker_picture = document.createElement("img");
+                        hacker_picture.setAttribute("id","hacker");
+                        hacker_picture.setAttribute("background-color", "red");
+                        var percent = document.createElement("h1");
+                        percent.innerHTML = (fiveNumArray[i]*100) + "%";
+
+                        var description = document.createElement("p1");
+                        hacker_picture.src = jsonDataMAIN[fiveHackers[i]]["pic"];
+                        description.innerHTML = jsonDataMAIN[fiveHackers[i]]["description"];
+                        var picture_div = document.createElement("div");
+                        picture_div.appendChild(hacker_picture);
+                        //picture_div.setAttribute("class","col-md-6");
+                        var description_div = document.createElement("div");
+                        description_div.appendChild(description);
+                        //description_div.setAttribute("class","col-md-6");
+
+                        var holder = document.createElement("div");
+
+                        holder.setAttribute("class","col-md-6");
+                        holder.setAttribute("background","none");
+
+                        holder.appendChild(percent);
+
+                        holder.appendChild(picture_div);
+                        holder.appendChild(description_div);
+                        document.getElementById("hacker").appendChild(holder);
+
+                      }
+
+              //console.log(list[name]);
+
+            //kairos.detect(image, jsonData[key], "a-gallery", callback2);
+
+
+
+
+
+
+
+            //console.log(document.getElementById("row"));
+
+            //console.log(jsonDataMAIN[jsonData[key]]["description"]);
+          }
+
+        });
       });
+
+
+      //kairos.detect(image, myDetectCallback, options);
+
+
 
 
 
 
       //console.log(kairos);
       // (1) set up your callback method
-      function myDetectCallback(response)
-      {
-        console.log(typeof response);
-        var obj = JSON.parse(response.responseText);
 
-        //var json_data = JSON.stringify(response);
-        //document.getElementById("percentHispanic").innerHTML = "hispanic: " + JSON.stringify(obj["images"][0]["faces"][0]["attributes"]["hispanic"]*100);
-        //document.getElementById("percentBlack").innerHTML = "black: " + JSON.stringify(obj["images"][0]["faces"][0]["attributes"]["black"]*100);
-        //document.getElementById("percentAsian").innerHTML = "asian: " + JSON.stringify(obj["images"][0]["faces"][0]["attributes"]["asian"]*100);
-        //document.getElementById("percentWhite").innerHTML = "white: " + JSON.stringify(obj["images"][0]["faces"][0]["attributes"]["white"]*100);
-        //console.log(Object.keys(obj["images"][0]["faces"][0]["attributes"]));
-
-
-        //document.getElementById("percent").innerHTML = JSON.stringify(obj["images"][0]["face"]);
-
-
-      }
-      $.getJSON("static/hackers5.json", function(json) {
-          //var obj = JSON.stringify(json);
-          jsonDataMAIN = JSON.stringify(json["hackers"]);
-          jsonDataMAIN = JSON.parse(jsonDataMAIN)
-          jsonData = JSON.parse(JSON.stringify(Object.keys(json["hackers"]))); // this will show the info it in firebug console
-          console.log(jsonData);
-          console.log(jsonDataMAIN);
-
-
-          for (var key in jsonData) {
-            console.log(jsonData[key]);
-            console.log(jsonDataMAIN[jsonData[key]]["pic"]);
-            var hacker_picture = document.createElement("img");
-            hacker_picture.setAttribute("id",jsonData[key]);
-
-            var description = document.createElement("p1");
-            hacker_picture.src = jsonDataMAIN[jsonData[key]]["pic"];
-            description.innerHTML = jsonDataMAIN[jsonData[key]]["description"];
-            var picture_div = document.createElement("div");
-            picture_div.appendChild(hacker_picture);
-            //picture_div.setAttribute("class","col-md-6");
-            var description_div = document.createElement("div");
-            description_div.appendChild(description);
-            //description_div.setAttribute("class","col-md-6");
-
-            var holder = document.createElement("div");
-            holder.setAttribute("class","col-md-6");
-
-            holder.appendChild(picture_div);
-            holder.appendChild(description_div);
-            document.getElementById("hacker").appendChild(holder);
-            //console.log(document.getElementById("row"));
-
-            //console.log(jsonDataMAIN[jsonData[key]]["description"]);
-          }
-      }
-    );
 
 
   </script>
