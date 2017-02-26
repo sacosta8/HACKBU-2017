@@ -31,17 +31,18 @@
   <div class="container">
 
 
-    <h1> HELLO </h1>
-    <p1> you like jazz? </p1>
-    <p id="attributes"></p>
-    <video id="video" width="640" height="480" autoplay></video>
-    <button id="snap">Snap Photo</button>
-    <canvas id="canvas" width="640" height="480"></canvas>
-    <div id=percentHispanic>ayy</div>
-    <div id=percentBlack>ayy2</div>
-    <div id=percentAsian>ayy3</div>
-    <div id=percentWhite>ayy4</div>
-    <div id="hacker"></div>
+
+        <h1> HELLO </h1>
+        <p1> you like jazz? </p1>
+        <p id="attributes"></p>
+        <video id="video" width="640" height="480" autoplay></video>
+        <button id="snap">Snap Photo</button>
+        <canvas id="canvas" width="640" height="480"></canvas>
+        <div id=percentHispanic>ayy</div>
+        <div id=percentBlack>ayy2</div>
+        <div id=percentAsian>ayy3</div>
+        <div id=percentWhite>ayy4</div>
+        <div id="hacker" class="row"></div>
 </div>
 
 
@@ -112,19 +113,25 @@
             console.log(jsonData[key]);
             console.log(jsonDataMAIN[jsonData[key]]["pic"]);
             var hacker_picture = document.createElement("img");
+            hacker_picture.setAttribute("id",jsonData[key]);
+
             var description = document.createElement("p1");
             hacker_picture.src = jsonDataMAIN[jsonData[key]]["pic"];
             description.innerHTML = jsonDataMAIN[jsonData[key]]["description"];
             var picture_div = document.createElement("div");
             picture_div.appendChild(hacker_picture);
+            //picture_div.setAttribute("class","col-md-6");
             var description_div = document.createElement("div");
             description_div.appendChild(description);
+            //description_div.setAttribute("class","col-md-6");
+
             var holder = document.createElement("div");
-            holder.setAttribute("id",jsonData[key]);
+            holder.setAttribute("class","col-md-6");
+
             holder.appendChild(picture_div);
             holder.appendChild(description_div);
             document.getElementById("hacker").appendChild(holder);
-            console.log(document.getElementById("hacker"));
+            //console.log(document.getElementById("row"));
 
             //console.log(jsonDataMAIN[jsonData[key]]["description"]);
           }
