@@ -115,10 +115,14 @@
             var description = document.createElement("p1");
             hacker_picture.src = jsonDataMAIN[jsonData[key]]["pic"];
             description.innerHTML = jsonDataMAIN[jsonData[key]]["description"];
+            var picture_div = document.createElement("div");
+            picture_div.appendChild(hacker_picture);
+            var description_div = document.createElement("div");
+            description_div.appendChild(description);
             var holder = document.createElement("div");
             holder.setAttribute("id",jsonData[key]);
-            holder.appendChild(hacker_picture);
-            holder.appendChild(description);
+            holder.appendChild(picture_div);
+            holder.appendChild(description_div);
             document.getElementById("hacker").appendChild(holder);
             console.log(document.getElementById("hacker"));
 
