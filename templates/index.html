@@ -75,12 +75,20 @@
 
 
       }
-      $.getJSON("static/hackers.json", function(json) {
+      $.getJSON("static/hackers5.json", function(json) {
           //var obj = JSON.stringify(json);
-          console.log(JSON.stringify(json["glossary"])); // this will show the info it in firebug console
+          jsonDataMAIN = JSON.stringify(json["hackers"]);
+          jsonDataMAIN = JSON.parse(jsonDataMAIN)
+          jsonData = JSON.parse(JSON.stringify(Object.keys(json["hackers"]))); // this will show the info it in firebug console
+          console.log(jsonData);
+          console.log(jsonDataMAIN);
 
 
-      });
+          for (var key in jsonData) {
+            console.log(jsonDataMAIN[jsonData[key]]["description"]);
+          }
+      }
+    );
 
 
   </script>
