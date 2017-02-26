@@ -5,8 +5,6 @@
     <script src="static/javascript/kairos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
-    <script src="static/addons/p5.dom.js"</script>
-    <script src="static/javascript/sketch.js"></script>
 
   </head>
   <body>
@@ -29,7 +27,6 @@
 
   <script>
     var kairos = new Kairos("cd7690fd","32df39bf4f4e7d9882a9e6e9154ceaca");
-
 
       var canvas = document.getElementById('canvas');
       var context = canvas.getContext('2d');
@@ -78,6 +75,12 @@
 
 
       }
+      $.getJSON("static/hackers.json", function(json) {
+          //var obj = JSON.stringify(json);
+          console.log(JSON.stringify(json["glossary"])); // this will show the info it in firebug console
+
+
+      });
 
 
   </script>
