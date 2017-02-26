@@ -18,6 +18,7 @@
     <div id=percentBlack>ayy2</div>
     <div id=percentAsian>ayy3</div>
     <div id=percentWhite>ayy4</div>
+    <div id="hacker_picture"></div>
 
 
 
@@ -87,7 +88,10 @@
           for (var key in jsonData) {
             console.log(jsonData[key]);
             console.log(jsonDataMAIN[jsonData[key]]["pic"]);
-
+            var hacker_picture = document.createElement("img");
+            hacker_picture.src = jsonDataMAIN[jsonData[key]]["pic"];
+            console.log(hacker_picture);
+            document.getElementById("hacker_picture").append(hacker_picture);
 
             //console.log(jsonDataMAIN[jsonData[key]]["description"]);
           }
