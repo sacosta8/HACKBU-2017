@@ -1,22 +1,20 @@
 {
-    "glossary": {
-        "title": "example glossary",
-		"GlossDiv": {
-            "title": "S",
-			"GlossList": {
-                "GlossEntry": {
-                    "ID": "SGML",
-					"SortAs": "SGML",
-					"GlossTerm": "Standard Generalized Markup Language",
-					"Acronym": "SGML",
-					"Abbrev": "ISO 8879:1986",
-					"GlossDef": {
-                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
-						"GlossSeeAlso": ["GML", "XML"]
-                    },
-					"GlossSee": "markup"
-                }
-            }
-        }
+  "hackers":
+  {
+    "Jeanson":
+    {
+      "name":"Jeanson James Ancheta",
+      "pic":"http://cdn.list25.com/wp-content/uploads/2013/04/Slide1109.jpg",
+      "description": "A dropout of Downey High School in California, Jeanson James Ancheta became a hacker in 2004 after he started to work with software robots called “botnets.” His hacking practice began when he discovered rxbot, a computer worm that has the capacity to infect and destroy computer networks. He became the first person to have ever been charged for controlling a huge number of hijacked computers in the United States."
+    },
+    "Kevin":
+    {
+      "name":"Kevin Poulsen",
+      "pic":"http://cdn2.list25.com/wp-content/uploads/2013/04/Slide272.jpg",
+      "description":"A news editor at Wired.com, Kevin Lee Poulsen is a former hacker whose most remarkable hack was when he took over the telephone lines of the entire Los Angeles-based radio station KIIS-FM as he intended to make sure that he would be the 102nd caller in order to win a Porsche 944 S2.  After he was released from prison, he decided to leave the computer programming world and become a journalist to distance himself from his criminal past."
     }
+
+  }
+
+
 }
