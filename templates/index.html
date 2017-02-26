@@ -32,17 +32,28 @@
 
 
 
-        <h1> HELLO </h1>
-        <p1> you like jazz? </p1>
+        <!--div id=percentHispanic>ayy</div>
         <p id="attributes"></p>
-        <video id="video" width="640" height="480" autoplay></video>
-        <button id="snap">Snap Photo</button>
-        <canvas id="canvas" width="640" height="480"></canvas>
-        <div id=percentHispanic>ayy</div>
         <div id=percentBlack>ayy2</div>
         <div id=percentAsian>ayy3</div>
         <div id=percentWhite>ayy4</div>
-        <div id="hacker" class="row"></div>
+      -->
+          <div class="row">
+            <div class = "col-md-5" >
+              <video id="video" width="640" height="480" autoplay </video>
+            </div>
+            <div class = "col-md-2" ></div>
+
+          <div class = "col-md-5" >
+          <canvas id="canvas" width="640" height="480"  ></canvas>
+        </div>
+        </div>
+
+        <button id="snap">Snap Photo</button>
+
+          <div id="hacker" class="row">
+
+        </div>
 </div>
 
 
@@ -85,7 +96,7 @@
       // (1) set up your callback method
       function myDetectCallback(response)
       {
-        console.log(typeof response)
+        console.log(typeof response);
         var obj = JSON.parse(response.responseText);
 
         //var json_data = JSON.stringify(response);
