@@ -1,19 +1,32 @@
 {
   "hackers":
   {
-    "Jeanson":
+    "Jeanson James Ancheta":
     {
-      "name":"Jeanson James Ancheta",
       "pic":"http://cdn.list25.com/wp-content/uploads/2013/04/Slide1109.jpg",
       "description": "A dropout of Downey High School in California, Jeanson James Ancheta became a hacker in 2004 after he started to work with software robots called “botnets.” His hacking practice began when he discovered rxbot, a computer worm that has the capacity to infect and destroy computer networks. He became the first person to have ever been charged for controlling a huge number of hijacked computers in the United States."
     },
-    "Kevin":
+    "Kevin Poulsen":
     {
-      "name":"Kevin Poulsen",
       "pic":"http://cdn2.list25.com/wp-content/uploads/2013/04/Slide272.jpg",
       "description":"A news editor at Wired.com, Kevin Lee Poulsen is a former hacker whose most remarkable hack was when he took over the telephone lines of the entire Los Angeles-based radio station KIIS-FM as he intended to make sure that he would be the 102nd caller in order to win a Porsche 944 S2.  After he was released from prison, he decided to leave the computer programming world and become a journalist to distance himself from his criminal past."
-    }
+    },
 
+    "Albert Gonzalez":
+    {
+      "pic":"http://cdn3.list25.com/wp-content/uploads/2013/04/Slide325.jpg",
+      "description":"A computer criminal best known for having masterminded and orchestrated a string of credit card thefts in the United States that brought in 170 million US dollars to his personal account, Albert Gonzalez is a computer hacker who is said to have committed the biggest and most controversial fraud in history. He used SQL injections in his operations to steal computer data from private computer networks and launch ARP spoofing attacks, a technique that sends fake messages to local area networks."
+    },
+    "George Hotz":
+    {
+      "pic":"http://cdn.list25.com/wp-content/uploads/2013/04/Slide425.jpg",
+      "description":"An alumnus of the John Hopkins Centre for Talented Youth program, George Francis Hotz is known for hacking the iPhone so that it could be used with other wireless carriers. He was also the one who developed the limera1n jailbreak tool, the tool that could remove the limitations of Apple devices such as iPad, iPhone, iPod touch, and Apple TV. He was also sued by Sony for hacking the PlayStation3."
+    },
+    "Kevin Mitnick":
+    {
+      "pic":"http://cdn.list25.com/wp-content/uploads/2013/04/Slide525.jpg",
+      "description":"An American computer security consultant, Kevin David Mitnick is one of the most notorious hackers of the 20th century. He got involved in several computer and communications-related crimes and even became one of the most wanted computer criminals in the United States. At a very young age of 12, Kevin Mitnick  begun to use his social engineering skills to circumvent the punch card system used in Los Angeles buses."
+    }
   }
 
 
