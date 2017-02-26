@@ -18,7 +18,7 @@
     <div id=percentBlack>ayy2</div>
     <div id=percentAsian>ayy3</div>
     <div id=percentWhite>ayy4</div>
-    <div id="hacker_picture"></div>
+    <div id="hacker"></div>
 
 
 
@@ -89,9 +89,15 @@
             console.log(jsonData[key]);
             console.log(jsonDataMAIN[jsonData[key]]["pic"]);
             var hacker_picture = document.createElement("img");
+            var description = document.createElement("p1");
             hacker_picture.src = jsonDataMAIN[jsonData[key]]["pic"];
-            console.log(hacker_picture);
-            document.getElementById("hacker_picture").append(hacker_picture);
+            description.innerHTML = jsonDataMAIN[jsonData[key]]["description"];
+            var holder = document.createElement("div");
+            holder.setAttribute("id",jsonData[key]);
+            holder.appendChild(hacker_picture);
+            holder.appendChild(description);
+            document.getElementById("hacker").appendChild(holder);
+            console.log(document.getElementById("hacker"));
 
             //console.log(jsonDataMAIN[jsonData[key]]["description"]);
           }
