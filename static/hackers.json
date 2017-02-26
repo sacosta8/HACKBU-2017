@@ -26,6 +26,106 @@
     {
       "pic":"http://cdn.list25.com/wp-content/uploads/2013/04/Slide525.jpg",
       "description":"An American computer security consultant, Kevin David Mitnick is one of the most notorious hackers of the 20th century. He got involved in several computer and communications-related crimes and even became one of the most wanted computer criminals in the United States. At a very young age of 12, Kevin Mitnick  begun to use his social engineering skills to circumvent the punch card system used in Los Angeles buses."
+    },
+    "Gary McKinnon":
+    {
+      "pic":"http://cdn2.list25.com/wp-content/uploads/2013/04/Slide625.jpg",
+      "description":"Convicted for having hacked a total of 97 US-based military and NASA computer systems, Gary McKinnon is a systems administrator based in Scotland. In 2002, he was known for having perpetrated the largest military computer hack of all time after shutting down a network of 2,000 computers in the US military and deleting critical files such as weapons logs in just a matter of 24 hours. This rendered the US military network inoperable for days."
+    },
+    "Adrian Lamo":
+    {
+      "pic":"http://cdn2.list25.com/wp-content/uploads/2013/04/Slide725.jpg",
+      "description":"Adrian Lamo first caught the attention of the media after he hacked into several high-profile computer networks such as The New York Times, Yahoo!, and Microsoft. He also became known for operating Inside-AOL.com, an AOL watchdog website. He has performed several authorized and unauthorized security checks for high-profile networks and yet never asked for a fee. Lamo was complimented for fortifying the corporate security of Worldcom."
+    },
+    "Jonathan James":
+    {
+      "pic":"http://cdn.list25.com/wp-content/uploads/2013/04/Slide825.jpg",
+      "description":"A hacker who was imprisoned at a juvenile age for violating the cybercrime law, Jonathan James was known for committing several unauthorized intrusions in computer networks and systems including those of Bellsouth and the Miami-Dade School. In his early 20’s, he admitted to the authorities that he had installed an illegal backdoor in a computer server in Virginia to access the usernames and passwords of some 300 internet users, particularly DRTA employees and military men."
+    },
+    "Owen Walker":
+    {
+      "pic":"http://cdn.list25.com/wp-content/uploads/2013/04/Slide925.jpg",
+      "description":"A hacker based in New Zealand, Owen Walker was a ringleader of a notorious international hacking organization that was estimated to have caused about $27 million worth of damages to several groups. He did not receive formal training in computer programming since he dropped out of school because of bullying. He masterminded the attack of the computer network of the University of Pennsylvania through the use of unauthorized botnets which he established himself."
+    },
+    "Robert Tappan Morris":
+    {
+      "pic":"http://cdn3.list25.com/wp-content/uploads/2013/04/Slide1025.jpg",
+      "description":"A computer scientist who in 1988 invented the first computer worm on the internet known as the Morris Worm. Robert Tappan Morris was the first person to have ever been convicted due to his violation of the Computer Fraud and Abuse Act of the United States. He used to be a professor at the Department of Electrical Engineering and Computer Science of the Massachusetts Institute of Technology before he was sentenced to three years of probation by the US court."
+    },
+    "Robert Tappan Morris":
+    {
+      "pic":"http://cdn4.list25.com/wp-content/uploads/2013/04/Slide1129.jpg",
+      "description":"HD Moore is the creator of the computer software Metasploit which was developed to test computer networks resistance to hacker penetration.  HD Moore is also known for software projects such as WarVOX, AxMan, the Metasploit Decloaking Engine and Rogue Network Link Detection Tools.  As a computer engineer, he concerned himself with the development of platforms intended to become security tools designed to test for vulnerabilities within networks in order to aid the development of stronger network protection software."
+    },
+    "Dennis Moran":
+    {
+      "pic":"http://cdn4.list25.com/wp-content/uploads/2013/04/Slide1227.jpg",
+      "description":"One of the most notorious computer criminals of the 20th century, Dennis M. Moran was involved in a series of denial-of-service attacks that caused hundreds of internet websites to shut down. Also known as Coolio, Dennis Moran also masterminded the defacement of the DARE and RSA Security websites, as well as the unauthorized access of the computer systems of the US Air Force and US Army. As an adult, he was charged with seven counts of Class A felonies related to illegal hacking."
+    },
+    "Kristina Svechinskaya":
+    {
+      "pic":"http://cdn4.list25.com/wp-content/uploads/2013/04/Slide1325.jpg",
+      "description":"Kristina Vladimirovna Svechinskaya is a young Russian hacker who got involved in several plots to defraud some of the largest banks in the United States and Great Britain. She used a trojan horse to attack and open thousands of bank accounts in the Bank of America, through which she was able to skim around $3 billion in total."
+    },
+    "Sam Jain":
+    {
+      "pic":"http://cdn2.list25.com/wp-content/uploads/2013/04/Slide1425.jpg",
+      "description":"An internet entrepreneur and the former chief executive officer of eFront, Sam Jain was arrested in California in 2000 after being charged with submitting fraudulent data to website ranking publisher Media Matrix. Prior to that, he had a pending case in California because of his involvement in the sale of counterfeit Symentec software. He also got involved in the ICQ instant messaging scandal, which allowed him to access private data from several internet accounts."
+    },
+    "Karl Koch":
+    {
+      "pic":"http://cdn2.list25.com/wp-content/uploads/2013/04/Slide1525.jpg",
+      "description":"A German hacker who became famous in the 1980’s, Karl Koch was involved in the sale of hacked information from US military computers to the KGB, the main security agency of the Soviet Union. He was a member of different hacking organizations such as the CCC (Chaos Computer Club), and worked with individual hackers such as DOB or Dirk-Otto-Brezinski and Urmel. He was among the few hackers who got involved in the Cold War computer espionage incident."
+    },
+    "Ehud Tenenbaum":
+    {
+      "pic":"http://cdn.list25.com/wp-content/uploads/2013/04/Slide1625.jpg",
+      "description":"An Israeli cracker, Ehud Tenenbaum caught the attention of the media at the young age of 19, after he led a group of young hackers that damaged the computer networks of some of the largest institutions in the United States. Young as he was, he was arrested for hacking the computer systems of the US Air Force, NASA, US Navy, The Pentagon, Knesset and MIT. He also hacked into the computers of terrorist groups based in Palestine and destroyed the websites of Islamist organization Hamas."
+    },
+    "Leonard Rose":
+    {
+      "pic":"http://cdn.list25.com/wp-content/uploads/2013/04/Slide1725.jpg",
+      "description":"Leonard Rose was a hacker convicted in 1991 due to wire fraud. He was known for having stolen Unix source codes from AT&T and distributed two Trojan Horse programs which allowed him to gain illegal access to several computer systems. He was also accused of being the mastermind of the Legion of Doom hacking group, one of the most active hacker groups from 1980’s to 1990’s, and of collecting login information from various websites."
+    },
+    "Rafael Nunez":
+    {
+      "pic":"http://cdn2.list25.com/wp-content/uploads/2013/04/Slide1825.jpg",
+      "description":"Rafael Nunez was a member of the notorious hacking group World of Hell in 2011. As a member of the group, he got involved in several high profile attacks, finding websites with poor security and then defacing them with light-hearted messages. He was part of the Dan Verton book entitled “The Hacker Diaries: Confessions of Teenage Hackers” in 2002. Today, he is a notorious businessman dwelling in Venezuela."
+    },
+    "Andrew Auernheimer":
+    {
+      "pic":"http://cdn2.list25.com/wp-content/uploads/2013/04/Slide1925.jpg",
+      "description":"More commonly known as “Weev,” Andrew Alan Escher Auernheimer was an internet troll who gained media attention because of his inflammatory, off-topic posts in several online communities and forums. An American grey hat hacker, Andrew was known for using several pseudonyms in his operations. He was the one responsible for the disruption of Amazon’s services in 2009 and for hacking New York Time’s website."
+    },
+    "Mark Abene":
+    {
+      "pic":"http://cdn2.list25.com/wp-content/uploads/2013/04/Slide2025.jpg",
+      "description":"Known by his pseudonym Phiber Optik, Mark Abene was a New York-based hacker who used to be a member of some of the most notorious hacker groups in the United States, including the Legion of Doom and the Masters of Deception. He was a high-profile hacker who targeted large corporations and was among the most important figures of the Masters of Deception. Aside from computers, he also explored and hacked several telecommunication systems."
+    },
+    "Julian Paul Assange":
+    {
+      "pic":"http://cdn2.list25.com/wp-content/uploads/2013/04/Slide2127.jpg",
+      "description":"An Australian editor and publicist, Julian Paul Assenge is the founder of WikiLeaks, a site that publishes submissions of secret information from personal web accounts and news leaks. Before he became internationally acclaimed for his founding of WikiLeaks, he was a teenage hacker who published US military documents. At age 16, he joined the International Subversives group and hacked computer systems under his pseudonym, 'Mendax.'"
+    },
+    "Mike Calce":
+    {
+      "pic":"http://cdn.list25.com/wp-content/uploads/2013/04/Slide2226.jpg",
+      "description":"Michael Demon Calce, also known as the MafiaBoy of cyberspace, was a high school apprentice at West Island, Quebec when he got involved in a series of publicized denial-of-service attacks against some of the largest commercial websites, including Yahoo!, eBay, CNN, Amazon.com and Dell, Inc. In 2000, he targeted Yahoo! through project Rivolta, a term which means “riot” in Italy. He initially denied the offenses charged against him but accepted the accusations in 2001."
+    },
+    "Chad Davis":
+    {
+      "pic":"http://cdn.list25.com/wp-content/uploads/2013/04/Slide2325.jpg",
+      "description":"An American hacker who operated under the pseudonym Mindphasr, Chad Davis is among the most notorious cybercriminals of the 20th century. He founded Global Hell, a syndicate of computer hackers in the United States, and authored the hacking of the websites of some of the largest organizations and corporations in the country. He was the man behind the vandalism of the homepage of The White House and the US Army with a message saying “GlobalHell will not die.”"
+    },
+    "Nahshon Even-Chaim":
+    {
+      "pic":"http://cdn3.list25.com/wp-content/uploads/2013/04/Slide2425.jpg",
+      "description":"Also known as Phoenix, Nahshon Even-Chaim was the first computer hacker to have ever been convicted in Australia. His mission was to break into computer systems by dialling indirectly or placing a call through X.25 networks or internet connectivity. Among the websites he damaged were those of the University of California, Berkley, University of Wisconsin-Madison, and the Lawrence Livermore National Laboratory. Hacking computers was his way of ridiculing the entire computer security community."
+    },
+    "Raphael Gray":
+    {
+      "pic":"http://cdn3.list25.com/wp-content/uploads/2013/04/Slide2525.jpg",
+      "description":"At age 19, Raphael Gray was able to hack several computer systems around the world in just a matter of one month. His mission was to gain unauthorized access to credit card information, which eventually netted him millions of dollars. Dubbed “The Bill Gates Hacker,” Gray broke into secure computer systems and published all the credit card information he accessed as part of his multimillion credit card pound mission."
     }
   }
 
