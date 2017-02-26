@@ -16,31 +16,19 @@
     <video id="video" width="640" height="480" autoplay></video>
     <button id="snap">Snap Photo</button>
     <canvas id="canvas" width="640" height="480"></canvas>
+    <div id=percentHispanic>ayy</div>
+    <div id=percentBlack>ayy2</div>
+    <div id=percentAsian>ayy3</div>
+    <div id=percentWhite>ayy4</div>
+
+
+
+
   </body>
+
 
   <script>
     var kairos = new Kairos("cd7690fd","32df39bf4f4e7d9882a9e6e9154ceaca");
-    console.log(kairos);
-    // (1) set up your callback method
-    function myDetectCallback(response)
-    {
-       console.log(response.responseText);
-    }
-
-    // (2) prepare your parameters
-
-
-      var myImage = new Image(100, 200);
-      myImage.src = 'http://abovethelaw.com/wp-content/uploads/2015/04/barack-obama.jpg';
-      myImage.src = myImage.src.replace("data:image/jpeg;base64,", "");
-
-
-    // (3) pass your params and callback to the function
-    kairos.detect(myImage.src, myDetectCallback);
-
-  </script>
-
-  <script>
 
 
       var canvas = document.getElementById('canvas');
@@ -60,8 +48,37 @@
       console.log(context);
       context.drawImage(video, 0, 0, 640, 480);
       var image = canvas.toDataURL();
-      console.log(image);
+      //console.log(image);
+      var options = { "selector" : "FULL"};
+      kairos.detect(image, myDetectCallback, options);
+
+
+
       });
+
+
+
+
+      //console.log(kairos);
+      // (1) set up your callback method
+      function myDetectCallback(response)
+      {
+        console.log(typeof response)
+        var obj = JSON.parse(response.responseText);
+
+        //var json_data = JSON.stringify(response);
+        document.getElementById("percentHispanic").innerHTML = "hispanic: " + JSON.stringify(obj["images"][0]["faces"][0]["attributes"]["hispanic"]*100);
+        document.getElementById("percentBlack").innerHTML = "black: " + JSON.stringify(obj["images"][0]["faces"][0]["attributes"]["black"]*100);
+        document.getElementById("percentAsian").innerHTML = "asian: " + JSON.stringify(obj["images"][0]["faces"][0]["attributes"]["asian"]*100);
+        document.getElementById("percentWhite").innerHTML = "white: " + JSON.stringify(obj["images"][0]["faces"][0]["attributes"]["white"]*100);
+        console.log(Object.keys(obj["images"][0]["faces"][0]["attributes"]));
+
+
+        //document.getElementById("percent").innerHTML = JSON.stringify(obj["images"][0]["face"]);
+
+
+      }
+
 
   </script>
 
